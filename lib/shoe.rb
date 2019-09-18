@@ -10,5 +10,14 @@ class Shoe
     self.condition = "new"
     puts "Your shoe is as good as new!"
   end
+  
+  BRANDS = []
+
+  def initialize(brand)
+    @brand = brand
+    if !BRANDS.include?(brand)  
+     BRANDS << brand
+    end
+  end
 
 end
